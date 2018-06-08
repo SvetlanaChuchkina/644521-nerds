@@ -100,7 +100,7 @@
             </tr>
           </table>
         </div>
-      </section>>     
+      </section>   
       <section class="site">
         <h2 class="visuale-hidden">Сайты</h2>
         <ul>
@@ -134,20 +134,20 @@
         <p>191186, Санкт-Петербург,<br>
            ул. Б. Конюшенная, д. 19/8<br>
            тел. +7 (812) 275-75-75</p>
-        <a href="#">Напишите нам</a>
+        <a href="#write-us">Напишите нам</a>
         <img src="img/map.png" width="1440" height="416" alt="Карта">
       </section>
       <section class="network">
         <h2 class="visuale-hidden">Социальные сети</h2>
         <ul class="social-network">
           <li class="icon VK">
-            <a href="https://vk.com/htmlacademy">VK</a>
+            <a href="https://vk.com/htmlacademy">В контакте</a>
           </li>
           <li class="icon f">
-            <a href="https://www.facebook.com/htmlacademy">f</a>
+            <a href="https://www.facebook.com/htmlacademy">Фейсбук</a>
           </li>
           <li class="icon i">
-            <a href="https://www.instagram.com/htmlacademy/">i</a>
+            <a href="https://www.instagram.com/htmlacademy/">Инстаграм</a>
           </li>
         </ul>
         <b>Давайте дружить - это выгодно! </b>
@@ -156,7 +156,17 @@
     </footer>
     <section class="write-us">
       <h4>Напишите нам</h4>
-      <!--здесь будет форма-->
+      <form id=write-us action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+          <label for="e-mail">Ваш e-mail</label>
+          <input type="email" name="e-mail" id="e-mail" required placeholder="email@example.com">
+          <label for="letter">Текст письма</label>
+          <textarea id="letter" name="letter" rows="5">"В свободной форме"</textarea>
+          <button type="submit">Отправить</button>
+        </fieldset>
+      </form>
     </section>
   </body>
 </html>
