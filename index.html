@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/s.css">
   </head>
   <body>
     <header class="main-header">
@@ -24,14 +25,14 @@
             <a href="contact.html">КОНТАКТЫ</a>
           </li>
         </ul>
-        <ul class="nav-bascet">
+        <ul class="nav-basket">
           <li class="basket">
             <a href="basket.html">КОРЗИНА</a>
           </li>
         </ul>
       </nav>
       <section class="info">
-        <h1 class="visuale-hidden">Инфо</h1>
+        <h1 class="visually-hidden">Инфо</h1>
         <ul class="info-slider">
           <li class="slider-item">
             <b>Долго, дорого, скурпулезно</b>
@@ -53,7 +54,7 @@
     </header>
     <main>
       <section class="services">
-        <h2 class="visuale-hidden">Услуги</h2>
+        <h2 class="visually-hidden">Услуги</h2>
         <ul class="list-services">
           <li class="list-services-item">
             <b>ВЕБ-САЙТЫ</b>
@@ -73,15 +74,15 @@
         </ul>
       </section>
       <section class="marketing">
-        <h2 class="visuale-hidden">Реклама</h2>
+        <h2 class="visually-hidden">Реклама</h2>
         <div class="dignity">
-          <b>Мы - маленькая, но гордая дизайн-студия и Краснодара!</b>
+          <b>Мы - маленькая, но гордая дизайн-студия из Краснодара!</b>
           <p>Мы проповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
           <b>Выполняем заказы на разработку:</b>
           <ul class="list-order">
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений iOS и Android</li>
-            <li>Слайд-щоу и видео для для корпаративных презентаций</li>
+            <li>Слайд-щоу и видео для корпаративных презентаций</li>
           </ul>
         </div>
         <div class="practice">
@@ -102,7 +103,7 @@
         </div>
       </section>   
       <section class="site">
-        <h2 class="visuale-hidden">Сайты</h2>
+        <h2 class="visually-hidden">Сайты</h2>
         <ul>
           <li>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -129,25 +130,25 @@
     </main>
     <footer>
       <section class="footer-contact">
-        <h2 class="visuale-hidden">Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <b>NERDS DESIGNE STUDIO</b>
         <p>191186, Санкт-Петербург,<br>
            ул. Б. Конюшенная, д. 19/8<br>
            тел. +7 (812) 275-75-75</p>
-        <a href="#write-us">Напишите нам</a>
+        <a href="#">Напишите нам</a>
         <img src="img/map.png" width="1440" height="416" alt="Карта">
       </section>
       <section class="network">
-        <h2 class="visuale-hidden">Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-network">
-          <li class="icon VK">
-            <a href="https://vk.com/htmlacademy">В контакте</a>
+          <li class="social-network-item">
+            <a href="https://vk.com/htmlacademy" class="visually-hidden">В контакте</a>
           </li>
-          <li class="icon f">
-            <a href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+          <li class="social-network-item">
+            <a href="https://www.facebook.com/htmlacademy" class="visually-hidden">Фейсбук</a>
           </li>
-          <li class="icon i">
-            <a href="https://www.instagram.com/htmlacademy/">Инстаграм</a>
+          <li class="social-network-item">
+            <a href="https://www.instagram.com/htmlacademy/" class="visually-hidden">Инстаграм</a>
           </li>
         </ul>
         <b>Давайте дружить - это выгодно! </b>
@@ -156,15 +157,18 @@
     </footer>
     <section class="write-us">
       <h4>Напишите нам</h4>
-      <form id=write-us action="https://echo.htmlacademy.ru" method="post">
+      <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <label for="name">Ваше имя:</label>
           <input type="text" id="name" name="name" placeholder="Имя Фамилия">
-          <label for="e-mail">Ваш e-mail</label>
+          <label for="e-mail">Ваш e-mail:</label>
           <input type="email" name="e-mail" id="e-mail" required placeholder="email@example.com">
-          <label for="letter">Текст письма</label>
+          <label for="letter">Текст письма:</label>
           <textarea id="letter" name="letter" rows="5">"В свободной форме"</textarea>
           <button type="submit">Отправить</button>
+          <button class="modal-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
         </fieldset>
       </form>
     </section>
