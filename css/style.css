@@ -4,148 +4,112 @@ body {
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    color:#000000;
+    font-weight: 400;
+    color:#283136;
     background-color: #fff;
-}
-.navigation-link,
-.info-button,
-.buy,
-.button-contact,
-.sort-link,
-.price-title,
-.price-item,
-.pagination-link {
-    text-decoration: none;
-    text-transform: uppercase;   
 }
 .main-header {
     background-color: #eeeeee;
 }
-.main-navigation {
-    line-height: 30px;
+.main-navigation {   
     color:#000000;
 }
-.navigation-site,
-.navigation-basket,
-.info-slider,
-.list-services,
-.list-order,
-.network,
-.site-list,
-.social-network,
-.grid,
-.option,
-.sort-parameter,
-.sort-value,
-.catalog-list,
-.pagination-list {
-    list-style: none;
+a {
+    text-decoration: none;   
 }
 .navigation-link {
+    font-weight: 500;
+    line-height: 30px;
     color:#000000;
+    text-transform: uppercase;
 }
-.navigation-link:hover {
+.navigation-link:hover,
+.navigation-link:focus {
     color: #fb565a;
 } 
-.navigation-link:focus {
+.navigation-link:active {
     color: rgba(0, 0, 0, 0.3);
 }
-.logo:hover {
-    opacity: 0.3;
+.main-header ul {
+    list-style: none;
 }
 .slider-item b {
+    color: #000000;
     font-size: 55px;
     line-height: 55px;
-    font-size: bold;
+    font-weight: 500;
 }
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0,0,0,0);
-    overflow: hidden;
-}
-.info-slider{
-    display: inline-block;
-    height: 413px;
-}
-.info-slider:nth-child(1) {
-    background-image: url("../img/nerds-index-slide1.png");
-    background-repeat:  no-repeat ;
-}
-.info-slider:nth-child(2) {
-    background-image: url("../img/nerds-index-slide2.png");
-    background-repeat:  no-repeat ;
-}
-.info-slider:nth-child(3) {
-    background-image: url("../img/nerds-index-slide3.png");
-    background-repeat:  no-repeat ;
-}
-.info-button {
-    padding: 0;
+.btn {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #fff;
     border: none;
     background-color: #fb565a;
-    position: absolute;
-    left: 140px;
-    top: 400px;
-    width: 240px;
-    height: 50px;
-    color: white;
-    line-height: 18px;
-    text-align: center;
-    vertical-align: middle;
+    text-transform: uppercase;
+    text-align: center; 
+    vertical-align: middle;    
 }
-.info-button:hover {
+.info-button:hover,
+.info-button:focus {
     background-color: #e74246;
 }
-.info-button:focus {
+.info-button:active {
     background-color: #d7373b;
     color: rgba(255, 255, 255, 0.3);
 }
+.info-slider li:nth-child(1) {
+    background-image: url("../img/nerds-index-slide1.png");
+    background-repeat:  no-repeat ; 
+}
+.info-slider li:nth-child(2) { 
+    background-image: url("../img/nerds-index-slide2.png");
+    background-repeat:  no-repeat ;
+ }
+.info-slider li:nth-child(3) {
+    background-image: url("../img/nerds-index-slide3.png");
+    background-repeat:  no-repeat ;
+}
+.services ul {
+    list-style: none;
+}
 .list-services-item b {
+    color: #000000;
     font-size: 24px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
 }
-.buy {    
-    line-height: 18px;
-    color: white;
-    width: 160px;
-    height: 50px;
-    text-align: center;
-    vertical-align: middle;
-}
-.list-services li:nth-child(1) .buy {
+.buy-first {
     background-color: #fb565a;   
 }
-.list-services li:nth-child(1) .buy:hover {
+.buy-first:hover,
+.buy-first:focus {
     background-color: #e74246;   
 }
-.list-services li:nth-child(1) .buy:focus {
+.buy-first:active {
     background-color: #d7373b; 
     color: rgba(255, 255, 255, 0.3);  
 }
-.list-services li:nth-child(2) .buy {
+.buy-second {
     background-color: #00ca74;   
 }  
-.list-services li:nth-child(2) .buy:hover {
+.buy-second:hover,
+.buy-second:focus {
     background-color: #00bc6c;   
 }  
-.list-services li:nth-child(2) .buy:focus {
+.buy-second:active {
     background-color: #00aa62;  
     color: rgba(255, 255, 255, 0.3);      
 }  
-.list-services li:nth-child(3) .buy {
+.buy-third {
     background-color: #efc84a;   
 }  
-.list-services li:nth-child(3) .buy:hover {
+.buy-third:hover,
+.buy-third:focus {
     background-color: #eab534;
 }
-.list-services li:nth-child(3) .buy:focus {
+.buy-third:active {
     background-color: #e5a722;
     color: rgba(255, 255, 255, 0.3); 
 }
@@ -161,134 +125,152 @@ body {
     background-image: url("../img/presentation.png");
     background-repeat:  no-repeat ;
 }
+.marketing ul {
+    list-style: none;
+}
 .slogan {
+    color: #000000;
     font-size: 45px;
     line-height: 45px; 
+    font-weight: 500;
 }
+
 .order,
 caption {
+    color: #000000;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
 }
 .value {
+    color: #000000;
     font-size: 45px;
-    font-weight: bold;
+    font-weight: 700;
 }
 .sup {
+    color: #000000;
+    font-weight: 400;
     font-size: 25px;
     vertical-align: super;
 }
 .parameter {
     line-height: 18px;
 }
+.site ul {
+    list-style: none;
+}
 .site-link {
     opacity: 0.2;
 }
-.site-link:focus {
-    opacity: 0.1;
-}
+.site-link:focus,
 .site-link:hover {
     opacity: 1;
 }
+.site-link:active {
+    opacity: 0.1;
+}
 .name {
+    color: #000000;
     font-size: 18px;
     line-height: 30px;
+    font-weight: 700;
 }
 .contact-container {
-    width: 319px;
-    height: 308px;
-    background-color: white;
+    background-color: #fff;
     text-align: center;
     vertical-align: middle;
 }
 .footer-contact .address {
     line-height: 18px;
     color: #666666;
-}
-.button-contact{
-    color: white;
-    background-color: #fb565a; 
-    width: 219px;
-    height: 50px;
-    text-align: center;
-    vertical-align: middle;
-}
-.vk {
-    background-image: url(../img/vk-icon.svg);
-    background-repeat: no-repeat;
+}  
+.network ul {
+    list-style: none;
 }
 .friends {
+    color: #000000;
     font-size: 36px;
     line-height: 36px;
+    font-weight: 700;
+}
+.network p {
+    color: #444444;
+    line-height: 22px;
 }
 .write-us {
-    background-color: white;
-    width: 950px;
-    height: 590px;
+    background-color: #fff;
 }
 .title-write-us {
+    color: #000000;
     font-size: 45px;
     line-height: 45px;
+    font-weight: 500;
 }
 fieldset {
     border: none;
 }
 .label-write-us {
-    font-weight: bold;
+    font-weight: 700;
+    color: #000000;
+    line-height: 18px; 
 }
-.letter-write,
-.letter-write:hover {
+.letter-write-us {
+    border-color: #d7dcde;
+    color: rgba(68, 68, 68, 0.5);
+    line-height: 18px; 
+}
+.letter-write-us:hover {
     border-color: #b4b9bb;
-    color: rgba(68, 68, 68, 0.5) 
+    color: rgba(68, 68, 68, 0.5); 
 }
-.letter-write:focus {
+.letter-write-us:focus {
     border-color: rgba(0, 0, 0, 1) ;
-    color: rgba(68, 68, 68, 1) 
+    color: rgba(68, 68, 68, 1);
 }
-.send {
-    color: white;
-    background-color: #fb565a; 
-    width: 260px;
-    height: 50px;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
+.letter-write-us:invalid {
+    border-color: #e74246;
+    color: #e74246; 
+}
+.logo {
+    opacity: 1;
+}
+.logo:hover {
+    opacity: 0.3;
 }
 .site-nav-current {
     border-bottom: 2px solid #fb565a;
 }
 .h-catalog {
+    color: #000000;
+    font-weight: 500;
     font-size: 55px;
     line-height: 55px;
     text-align: center;
 }
+.filter ul {
+    list-style: none;
+}
 .section-filter {
+    color: #000000;
     font-size: 18px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
-}  
+} 
 .filter-option {
-    color: #283136;
-    font-weight: normal;
+    line-height: 20px;
 }
-.filter-option:hover {
-    color: #000;
+.filter-option:hover,
+.filter-option:focus {
+    color: #000000;
 }
-.filter-option:blocked {
+.filter-option:disabled {
     color: rgba(40, 49, 54, 0.5);
-}
+} 
 .button-filter {
     line-height: 18px;
-    font-weight: bold;
+    font-weight: 500;
     color: #000;
-    border: none;
     background-color: #eeeeee; 
-    width: 260px;
-    height: 50px;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
 }
 .button-filter:focus {
     color: rgba(0, 0, 0, 0.3);
@@ -300,6 +282,7 @@ fieldset {
 }
 .sort-link {
     font-size: 14px;
+    line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
 }
 .sort-link:hover {
@@ -308,10 +291,10 @@ fieldset {
 .sort-link:focus {
     color: rgba(0, 0, 0, 1);
 }
+.catalog ul {
+    list-style: none;
+}
 .price {
-    display: inline-block;
-    width: 360px;
-    height: 231px;
     background-color: #eeeeee;
     text-align: center;
     vertical-align: middle;
@@ -320,47 +303,77 @@ fieldset {
     font-size: 18px;
     line-height: 30px;
     color: #000;
-    font-weight: bold;
+    font-weight: 700;
 }
 .price p {
     line-height: 18px;
 }
 .price-item {
-    font-weight: bold;
-    color: white;
-    display: inline-block;
-    width: 200px;
-    height: 50px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 18px;
     background-color: #fb565a;
-    border: none;
-    text-align: center;
-    vertical-align: middle;
 }
-.price-item:hover {
+.price-item:hover,
+.price-item:focus {
     background-color: #e74246;
 }
-.price-item:focus {
+.price-item:active {
     background-color: #d7373b;
 }
 .pagination-link {
     color: #000;
     background-color: #eeeeee;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
     vertical-align: middle;
     text-align: center;
 }
-.pagination-link:hover {
+.pagination-link:hover,
+.pagination-link:focus {
     background-color: #dfdfdf;
 }
-.pagination-link:focus {
+.pagination-link:active {
     background-color: #d5d5d5;
     color: rgba(0, 0, 0, 0.3);
 }
-.pagination-link:active {
+.pagination-link .curent {
     background-color: white;
     color: rgba(0, 0, 0, 1);
     border: 2px solid #d5d5d5;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
