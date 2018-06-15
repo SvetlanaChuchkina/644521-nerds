@@ -21,7 +21,7 @@
             <a class="navigation-link" href="clientele.html">КЛИЕНТЫ</a>
           </li>
           <li>
-            <a class="site-nav-current">МАГАЗИН</a>
+            <a class="site-nav-current active">МАГАЗИН</a>
           </li>
           <li>
             <a class="navigation-link" href="contact.html">КОНТАКТЫ</a>
@@ -29,13 +29,13 @@
         </ul>
         <ul class="navigation-basket">
           <li class="basket">
-            <a class="navigation-link" href="basket.html">КОРЗИНА</a>
+            <a class="basket-link" href="basket.html">КОРЗИНА</a>
           </li>
         </ul>
       </nav>
-      <h1 class="h-catalog">Магазин готовых шаблонов</h1>
+      <h1 class="title-catalog">Магазин готовых шаблонов</h1>
     </header>
-    <main>
+    <main class="main-catalog">
       <section class="filter">
         <h2 class="visually-hidden">Фильтры</h2>
         <form action="https://echo.htmlacademy.ru" method="GET">
@@ -85,94 +85,100 @@
           </fieldset>
           <button class="button-filter btn" type="submit">ПОКАЗАТЬ</button>
         </form>
-        <h3 class="section-filter">Сортировать:</h3>
-        <ul class="sort-parameter">
-          <li>
-            <a class="sort-link" href="#">по цене</a>
-          </li>
-          <li>
-            <a class="sort-link" href="#">по типу</a>
-          </li>
-          <li>
-            <a class="sort-link" href="#">по названию</a>
-          </li>
-        </ul>
-        <ul class="sort-value">
-          <li>
-            <a class="visually-hidden" href="#">по убыванию</a>
-          </li>
-          <li>
-            <a class="visually-hidden" href="#">по возрастанию</a>
-          </li>
-        </ul>        
-      </section>
-      <section class="catalog">
-        <h2 class="visually-hidden">Каталог товаров</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <div class="price">
-              <a class="price-title" href="sedona.html">SEDONA</a>
-              <p>Информационный сайт для туристов</p>
-              <a class="price-item" href="buy.html">9900руб</a>
-            </div>
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
-          </li>
-          <li class="catalog-item">
-            <div class="price">
-              <a class="price-title" href="pink.html">PINK APP</a>
-              <p>Продуктовый лендинг приложения iOS и Android</p>
-              <a class="price-item" href="buy.html">9900руб</a>
-            </div>
-            <img src="img/img-pink.jpg" width="360" height="576" alt="PINK">
-          </li>
-          <li class="catalog-item">
-            <div class="price">
-              <a class="price-title" href="barbeshop.html">BARBERSHOP</a>
-              <p>Сайт салона красоты. Для мужчин, да.</p>
-              <a class="price-item" href="buy.html">9900руб</a>
-            </div>
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбешоп Бородинский">
-          </li>
-          <li class="catalog-item">
-            <div class="price">
-              <a class="price-title" href="mishka.html">MISHKA</a>
-              <p>Интернет-магазин вязаных игрушек.</p>
-              <a class="price-item" href="buy.html">9900руб</a>
-            </div>
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="Мишка">
-          </li>
-          <li class="catalog-item">
-            <div class="price">
-              <a class="price-title" href="aplus.html">A PLUS</a>
-              <p>Лендинг курсив повышения квалификации</p>
-              <a class="price-item" href="buy.html">9900руб</a>
-            </div>
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="А плюс">
-          </li>
-          <li class="catalog-item">
-            <div class="price">
-              <a class="price-title" href="kvast.html">КВАСТ</a>
-              <p>Промосайт производителя крафтового кваса</p>
-              <a class="price-item" href="buy.html">9900руб</a> 
-            </div>           
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
-          </li>
-        </ul>
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current">
-            <a class="pagination-link" href="#">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">Следующая</a>
-          </li>
-        </ul>
-      </section>
+        </section>
+        <div class ="catalog-container">
+          <div class="sort">
+          <h3 class="section-filter">Сортировать:</h3>
+          <ul class="sort-parameter">
+            <li>
+              <a class="sort-link" href="#">по цене</a>
+            </li>
+            <li>
+              <a class="sort-link" href="#">по типу</a>
+            </li>
+            <li>
+              <a class="sort-link" href="#">по названию</a>
+            </li>
+          </ul>
+          <ul class="sort-value">
+            <li>
+              <a class="sort-value-link" href="#" aria-label="по убыванию"></a>
+            </li>
+            <li>
+              <a class="sort-value-link" href="#" aria-label="по возрастанию"></a>
+            </li>
+          </ul>        
+        </div>
+        <section class="catalog">
+          <h2 class="visually-hidden">Каталог товаров</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <div class="price">
+                <a class="price-title" href="sedona.html">SEDONA</a>
+                <p>Информационный сайт для туристов</p>
+                <a class="price-btn btn" href="buy.html">9900руб</a>
+              </div>
+              <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+            </li>
+            <li class="catalog-item">
+              <div class="price">
+                <a class="price-title" href="pink.html">PINK APP</a>
+                <p>Продуктовый лендинг приложения iOS и Android</p>
+                <a class="price-btn btn" href="buy.html">9900руб</a>
+              </div>
+              <img src="img/img-pink.jpg" width="360" height="576" alt="PINK">
+            </li>
+            <li class="catalog-item">
+              <div class="price">
+                <a class="price-title" href="barbeshop.html">BARBERSHOP</a>
+                <p>Сайт салона красоты. Для мужчин, да.</p>
+                <a class="price-btn btn" href="buy.html">9900руб</a>
+              </div>
+              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбешоп Бородинский">
+            </li>
+            <li class="catalog-item">
+              <div class="price">
+                <a class="price-title" href="mishka.html">MISHKA</a>
+                <p>Интернет-магазин вязаных игрушек.</p>
+                <a class="price-btn btn" href="buy.html">9900руб</a>
+              </div>
+              <img src="img/img-mishka.jpg" width="360" height="576" alt="Мишка">
+            </li>
+            <li class="catalog-item">
+              <div class="price">
+                <a class="price-title" href="aplus.html">A PLUS</a>
+                <p>Лендинг курсив повышения квалификации</p>
+                <a class="price-btn btn" href="buy.html">9900руб</a>
+              </div>
+              <img src="img/img-aplus.jpg" width="360" height="576" alt="А плюс">
+            </li>
+            <li class="catalog-item">
+              <div class="price">
+                <a class="price-title" href="kvast.html">КВАСТ</a>
+                <p>Промосайт производителя крафтового кваса</p>
+                <a class="price-btn btn" href="buy.html">9900руб</a> 
+              </div>           
+              <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
+            </li>
+          </ul>
+        </section>
+        <div class="paginator-container">
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current">
+              <a class="pagination-link" href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">Следующая</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </main> 
     <footer>
       <section class="footer-contact">
@@ -199,8 +205,10 @@
             <a class="instagram" href="https://www.instagram.com/htmlacademy/" aria-label="Инстаграм"></a>
           </li>
         </ul>
-        <b class="friends">Давайте дружить - это выгодно! </b>
-        <p>Скидка 10% для друзей и социальных сетей</p>
+        <div class="footer-container">
+          <b class="friends">Давайте дружить - это выгодно! </b>
+          <p>Скидка 10% для друзей и социальных сетей</p>
+        </div>
       </section>
     </footer>
     <section class="write-us">

@@ -1,4 +1,5 @@
 body {
+    width: 1440px;
     margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
@@ -11,28 +12,73 @@ body {
 .main-header {
     background-color: #eeeeee;
 }
-.main-navigation {   
+.main-navigation { 
+    padding-top: 50px; 
+    display: flex; 
+    width: 1440px;
+    justify-content: space-between;
     color:#000000;
+    align-items: baseline:
+}
+.logo {
+    margin-left: 135px;
+    margin-right: 195px;
+}
+.navigation-basket {
+    margin-right: 140px;
+    margin-left:auto;
+}
+.navigation-site {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    opacity: 1;
+}
+.logo:hover,
+.logo:focus {
+    opacity: 0.8;
+}
+.logo:active {
+    opacity: 0.3;
 }
 a {
     text-decoration: none;   
 }
-.navigation-link {
+.navigation-link,
+.basket-link {
     font-weight: 500;
     line-height: 30px;
     color:#000000;
     text-transform: uppercase;
 }
 .navigation-link:hover,
-.navigation-link:focus {
+.navigation-link:focus,
+.basket-link:hover,
+.basket-link:focus {
     color: #fb565a;
 } 
-.navigation-link:active {
+.navigation-link:active,
+.basket-link:active {
     color: rgba(0, 0, 0, 0.3);
+}
+.info-slider {
+    width: 300%;
+    display: flex;
+}
+.slider-item {
+    flex-basis: 100%;
+    min-height: 430px;
+}
+.slider-container{
+    width: 525px;
+    margin-left: 85px;
 }
 .main-header ul {
     list-style: none;
 }
+
 .slider-item b {
     color: #000000;
     font-size: 55px;
@@ -40,15 +86,12 @@ a {
     font-weight: 500;
 }
 .btn {
-    font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     color: #fff;
     border: none;
     background-color: #fb565a;
-    text-transform: uppercase;
-    text-align: center; 
-    vertical-align: middle;    
+    text-transform: uppercase;    
 }
 .info-button:hover,
 .info-button:focus {
@@ -61,6 +104,7 @@ a {
 .info-slider li:nth-child(1) {
     background-image: url("../img/nerds-index-slide1.png");
     background-repeat:  no-repeat ; 
+    background-position: 75%;
 }
 .info-slider li:nth-child(2) { 
     background-image: url("../img/nerds-index-slide2.png");
@@ -70,10 +114,21 @@ a {
     background-image: url("../img/nerds-index-slide3.png");
     background-repeat:  no-repeat ;
 }
-.services ul {
+.list-services {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    
 }
-.list-services-item b {
+.services-item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    justify-content: flex-end;
+}
+.services-item b {
     color: #000000;
     font-size: 24px;
     line-height: 30px;
@@ -116,16 +171,27 @@ a {
 .list-services li:nth-child(1){
     background-image: url("../img/website.png");
     background-repeat:  no-repeat ;
+    margin-left: 100px;
 }
 .list-services li:nth-child(2){
     background-image: url("../img/apps.png");
-    background-repeat:  no-repeat ;
+    background-repeat:  no-repeat ;  
 }
 .list-services li:nth-child(3){
     background-image: url("../img/presentation.png");
     background-repeat:  no-repeat ;
+    margin-right: 200px;
 }
-.marketing ul {
+.marketing {
+    display: flex;
+    margin-top: 80px;
+}
+.dignity {
+    width: 760px;
+    height: 460px;
+    margin-left: 140px;
+}
+.list-order {
     list-style: none;
 }
 .slogan {
@@ -134,7 +200,9 @@ a {
     line-height: 45px; 
     font-weight: 500;
 }
-
+.practice {
+    margin-right: 30px;
+}
 .order,
 caption {
     color: #000000;
@@ -148,15 +216,18 @@ caption {
 }
 .sup {
     color: #000000;
-    font-weight: 400;
     font-size: 25px;
     vertical-align: super;
 }
 .parameter {
     line-height: 18px;
 }
-.site ul {
+.site-list {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 140px;
+    margin-right: 140px;
 }
 .site-link {
     opacity: 0.2;
@@ -177,13 +248,17 @@ caption {
 .contact-container {
     background-color: #fff;
     text-align: center;
-    vertical-align: middle;
 }
-.footer-contact .address {
+.address {
     line-height: 18px;
     color: #666666;
 }  
-.network ul {
+.network {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.social-network {
     list-style: none;
 }
 .friends {
@@ -230,23 +305,40 @@ fieldset {
     border-color: #e74246;
     color: #e74246; 
 }
-.logo {
-    opacity: 1;
-}
-.logo:hover {
-    opacity: 0.3;
-}
 .site-nav-current {
+    font-weight: 500;
+}
+.site-nav-current.active {
     border-bottom: 2px solid #fb565a;
 }
-.h-catalog {
+.title-catalog {
     color: #000000;
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
     text-align: center;
+    padding-bottom: 100px;
 }
-.filter ul {
+.main-catalog {
+    display: flex;
+    padding-left: 140px;
+    padding-right: 140px;
+    justify-content: space-between;
+}
+.filter {
+    width: 260px;
+    min-height: 760px;
+}
+.catalog-container {
+    width: 800px;
+    min-height: 1990px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.filter ul,
+.sort-parameter,
+.sort-value {
     list-style: none;
 }
 .section-filter {
@@ -268,36 +360,43 @@ fieldset {
 } 
 .button-filter {
     line-height: 18px;
-    font-weight: 500;
     color: #000;
     background-color: #eeeeee; 
 }
-.button-filter:focus {
+.button-filter:focus,
+.button-filter:hover {
+    background-color: #c8c8c8;
+}
+.button-filter:active {   
     color: rgba(0, 0, 0, 0.3);
     background-color: #d5d5d5;
     border-top: 2px solid #bfbfbf;
-}
-.button-filter:hover {
-    background-color: #c8c8c8;
 }
 .sort-link {
     font-size: 14px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
 }
-.sort-link:hover {
+.sort-link:hover,
+.sort-link:focus {
     color: rgba(0, 0, 0, 0.6);
 }
-.sort-link:focus {
+.sort-link:active {
     color: rgba(0, 0, 0, 1);
 }
-.catalog ul {
+.catalog-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+.catalog-list {
     list-style: none;
 }
 .price {
     background-color: #eeeeee;
-    text-align: center;
-    vertical-align: middle;
 }
 .price-title {
     font-size: 18px;
@@ -308,18 +407,17 @@ fieldset {
 .price p {
     line-height: 18px;
 }
-.price-item {
-    font-weight: 500;
-    color: #fff;
-    line-height: 18px;
-    background-color: #fb565a;
+.price-btn {
 }
-.price-item:hover,
-.price-item:focus {
+.price-btn:hover,
+.price-btn:focus {
     background-color: #e74246;
 }
-.price-item:active {
+.price-btn:active {
     background-color: #d7373b;
+}
+.pagination-list {
+    list-style: none;
 }
 .pagination-link {
     color: #000;
