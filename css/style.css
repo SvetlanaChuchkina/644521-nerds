@@ -1,5 +1,4 @@
-body {
-    width: 1440px;
+body {    
     margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
@@ -9,26 +8,33 @@ body {
     color:#283136;
     background-color: #fff;
 }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
 .main-header {
     background-color: #eeeeee;
 }
 .main-navigation { 
     padding-top: 50px; 
     display: flex; 
-    width: 1440px;
     justify-content: space-between;
     color:#000000;
-    align-items: baseline:
+    align-items: baseline;
 }
 .logo {
-    margin-left: 135px;
-    margin-right: 195px;
+    
+    margin-right: 200px;
 }
 .navigation-basket {
-    margin-right: 140px;
-    margin-left:auto;
+    list-style: none;
+    margin-left: 260px;
+   
 }
 .navigation-site {
+    margin: 0;
+    padding: 0;
     width: 440px;
     display: flex;
     justify-content: space-between;
@@ -64,18 +70,24 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 .info-slider {
+    margin: 0;
+    padding: 0;
     width: 300%;
     display: flex;
+    justify-content: space-between;
 }
 .slider-item {
-    flex-basis: 100%;
+    width: 100%;
     min-height: 430px;
+      
 }
 .slider-container{
+    margin-left:0;
     width: 525px;
-    margin-left: 85px;
+    
 }
-.main-header ul {
+.navigation-site,
+.info-slider{
     list-style: none;
 }
 
@@ -120,15 +132,17 @@ a {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
-    
+    margin-top: 50px; 
+    margin-left: 0;
+    padding-left: 0;
 }
-.services-item {
+.services-item {  
     display: flex;
     flex-direction: column;
     width: 300px;
     height: 350px;
     justify-content: flex-end;
+   
 }
 .services-item b {
     color: #000000;
@@ -173,28 +187,31 @@ a {
 .list-services li:nth-child(1){
     background-image: url("../img/website.png");
     background-repeat:  no-repeat ;
-    margin-left: 100px;
+    padding-right: 100px;
 }
 .list-services li:nth-child(2){
     background-image: url("../img/apps.png");
     background-repeat:  no-repeat ;  
+    padding-right: 100px;
 }
 .list-services li:nth-child(3){
     background-image: url("../img/presentation.png");
     background-repeat:  no-repeat ;
-    margin-right: 200px;
+    
 }
 .marketing {
     display: flex;
     margin-top: 80px;
+    justify-content: space-between;
 }
 .dignity {
     width: 760px;
-    height: 460px;
-    margin-left: 140px;
+    min-height: 460px;
+    
 }
 .list-order {
     list-style: none;
+    
 }
 .slogan {
     color: #000000;
@@ -203,7 +220,9 @@ a {
     font-weight: 500;
 }
 .practice {
-    margin-right: 30px;
+    margin-right: 0;
+    padding-right: 0;
+    margin-left: 100px;
 }
 .order,
 caption {
@@ -228,8 +247,8 @@ caption {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin-left: 140px;
-    margin-right: 140px;
+    padding: 0;
+    margin: 0;
 }
 .site-link {
     opacity: 0.2;
