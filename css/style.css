@@ -11,7 +11,7 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 10px;
 }
 .main-header {
     background-color: #eeeeee;
@@ -21,7 +21,7 @@ body {
     display: flex; 
     justify-content: space-between;
     color:#000000;
-    align-items: baseline;
+    align-items: center;
 }
 .logo {
     
@@ -131,7 +131,7 @@ a {
 .list-services {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: 50px; 
     margin-left: 0;
     padding-left: 0;
@@ -222,7 +222,6 @@ a {
 .practice {
     margin-right: 0;
     padding-right: 0;
-    margin-left: 100px;
 }
 .order,
 caption {
@@ -342,8 +341,6 @@ fieldset {
 }
 .main-catalog {
     display: flex;
-    padding-left: 140px;
-    padding-right: 140px;
     justify-content: space-between;
 }
 .filter {
