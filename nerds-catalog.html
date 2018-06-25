@@ -203,7 +203,7 @@
       </div>
     </main> 
     <footer>
-      <section class="footer-contact container">
+      <section class="footer-contact container inter">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contact-container">
           <b class="name">NERDS DESIGNE STUDIO</b>
@@ -240,21 +240,25 @@
         </div>
       </section>
     </footer>
-    <section class="write-us">
+    <section class="write-us modal">
       <h4 class="title-write-us">Напишите нам</h4>
       <form class="fieldset-container" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <label class="label-write-us" for="user">Ваше имя:</label>
-          <input class="letter-write-us" type="text" id="user" name="user" placeholder="Имя Фамилия">
-          <label class="label-write-us" for="e-mail">Ваш e-mail:</label>
-          <input class="letter-write-us" type="email" name="e-mail" id="e-mail" required placeholder="email@example.com">
-          <label class="label-write-us" for="letter">Текст письма:</label>
-          <textarea class="letter-write-us" id="letter" name="letter" rows="5">"В свободной форме"</textarea>
+        <fieldset class="fieldset-container">
+          <p class="write-us-item">
+            <label class="label-write-us" for="user">Ваше имя:</label>
+            <input class="letter-write-us" type="text" id="user" name="user" placeholder="Имя Фамилия">
+          </p>  
+          <p class="write-us-item">
+            <label class="label-write-us" for="e-mail">Ваш e-mail:</label>
+            <input class="letter-write-us" type="email" name="e-mail" id="e-mail" required placeholder="email@example.com">
+          </p>
+          <p class="write-us-item">
+            <label class="label-write-us" for="letter">Текст письма:</label>
+            <textarea class="letter-write-us" id="letter" name="letter" rows="5">"В свободной форме"</textarea>
+          </p> 
           <button class="send btn" type="submit">Отправить</button>
           <button class="modal-close" type="button">
             <span class="visually-hidden">Закрыть</span>
-                <span class="closen-btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
-            </span>
           </button>
         </fieldset>
       </form>
