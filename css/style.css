@@ -431,6 +431,7 @@ a {
     left: 50%;
     margin-left: -560px;
     padding: 50px 50px 45px 50px;
+    z-index: 3;
 }
 .address {
     padding-top: 10px;
@@ -440,9 +441,27 @@ a {
     
 } 
 .footer-contact img {
-   text-align: center; 
+    text-align: center;
+    position: relative;
+     
+ }
+ .modal-map {
+    display: none;
+  }
+.modal-show-map {
+    display: block;
 }
-.contact {
+.modal-map iframe {
+    position: absolute;
+    z-index: 2;
+ 
+    border: none;
+  }
+  
+ 
+
+
+.contact-btn {
     padding: 17px 40px;
 }
 .network {
@@ -498,20 +517,62 @@ a {
     color: #444444;
     line-height: 22px;
 }
+@keyframes bounce {
+    0% {
+      transform: translateY(2000px);
+    }
+    20% {
+        transform: translateY(200px);
+    }
+    80% {
+        transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+  }
 
+.modal-error {
+    animation: shake 0.6s;
+}
 .write-us {
     background-color: #fff;
     margin: 0;
     padding: 70px 100px 80px 100px;
     box-shadow: 0px 20px 50px 7px #646565;
     position: fixed;
-    top: 120px;
+    top: 50px;
     left: 50%;
     width: 760px;
     min-height: 440px;
     margin-left: -480px; 
-    Z-index: 300;
-   
+    z-index: 300;
+    display: none;
+}
+.modal-show {
+    display: block;
+    animation: bounce 1s;
 }
 
 .title-write-us {
@@ -563,6 +624,7 @@ fieldset {
 }
 .letter-write-us {
     border: 3px solid #d7dcde;
+    border-radius: 3px;
     color: rgba(68, 68, 68, 0.5);
     line-height: 18px; 
     box-sizing: border-box;

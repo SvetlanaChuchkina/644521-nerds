@@ -151,9 +151,16 @@
           <p class="address">191186, Санкт-Петербург,<br>
            ул. Б. Конюшенная, д. 19/8<br><br>
            тел. +7 (812) 275-75-75</p>
-          <a class="contact btn" href=#>Напишите нам</a>
+          <a class="contact-btn btn" href=#>Напишите нам</a>
         </div>
-        <img src="img/map.png" width="1200" height="416" alt="Карта">
+        <div class="modal-map">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBuinUA38A" width="1200" height="416" frameborder="1" allowfullscreen="true"></iframe>
+            <button class="modal-close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+            </div>
+        <a class="contacts-button-map" href="map.html"><img src="img/map.png" width="1200" height="416" alt="Карта"></a>
+        
       </section>
       <section class="network container">
         <h2 class="visually-hidden">Социальные сети</h2>
@@ -204,5 +211,7 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
+    <script src="js/map.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
