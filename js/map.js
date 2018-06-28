@@ -8,14 +8,14 @@ mapLink.addEventListener("click", function (evt) {
 
   mapClose.addEventListener("click", function (evt) {
     evt.preventDefault();
-    mapPopup.classList.remove("modal-show");
+    mapPopup.classList.remove("modal-show-map");
   });
 
   window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (evt.keyCode === 27) {
-      if (mapPopup.classList.contains("modal-show")) {
-        mapPopup.classList.remove("modal-show");
+      if (mapPopup.classList.contains("modal-show-map")) {
+        mapPopup.classList.remove("modal-show-map");
     }
 }
 });
