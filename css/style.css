@@ -40,7 +40,7 @@ body {
     padding: 0;
     width: 486px;
     display: flex;
-    
+    align-items: baseline;
     flex-wrap: wrap;
     
 }
@@ -104,11 +104,7 @@ a {
     margin: 0;
     padding: 0;
 }
-.slider-item {
-    min-height: 430px;
-    display: none; 
-    padding: 0;
-}
+
 
 .navigation-site,
 .info-slider{
@@ -131,7 +127,7 @@ a {
     margin-bottom: 38px;
 }
 .btn {
-   
+   display: inline-block;
     padding: 16px 55px;
     line-height: 18px;
     font-weight: 500;
@@ -141,7 +137,13 @@ a {
     text-transform: uppercase; 
     border-radius: 3px;   
 }
-.slider-controls i {
+
+.slider-item {
+    min-height: 430px;
+    padding: 0;
+}
+
+.slider-controls label {
     position: relative;
     display: inline-block;
     width: 18px;
@@ -150,7 +152,7 @@ a {
     border-radius: 50%;
     cursor: pointer; 
 }
-.slider-controls i::after {
+.slider-controls label::after {
     position: absolute;
     content: "";
     width: 18px;
@@ -160,17 +162,14 @@ a {
     left: 8px;
 }
 .slider-controls .active::before {
-    content: "";
-  
+    content: ""; 
     position: absolute;
     left: 50%;
     top: 50%;
     z-index: 2;
-  
     width: 4px;
     height: 4px;
-    margin: -4px;
-  
+    margin: -4px; 
     background-color: inherit;
     border: 2px solid #c1c1c1;
     border-radius: 50%;
@@ -179,15 +178,43 @@ a {
     position: absolute;
     left: 50%;
     bottom: 104px;
-    z-index: 100;
-    
+    z-index: 100;   
     width: 160px;
-    height: 18px;
-  
+    height: 18px; 
     text-align: center;
     font-size: 0;
     transform: translateX(-50%);
 }
+.slide {
+    display: none;
+}
+
+
+#slide-btn-1:checked ~ .info-slider #slide1,
+#slide-btn-2:checked ~ .info-slider #slide2,
+#slide-btn-3:checked ~ .info-slider #slide3 {
+   display: block;
+   
+}
+#slide-btn-1:checked ~ .slider-controls label[for="slide-btn-1"]::before,
+#slide-btn-2:checked ~ .slider-controls label[for="slide-btn-2"]::before,
+#slide-btn-3:checked ~ .slider-controls label[for="slide-btn-3"]::before {
+    content: "";  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2; 
+    width: 4px;
+    height: 4px;
+    margin: -4px;
+    background-color: inherit;
+    border: 2px solid #c1c1c1;
+    border-radius: 50%;  
+}
+
+
+
+
 .info-button:hover,
 .info-button:focus {
     background-color: #e74246;
@@ -196,11 +223,14 @@ a {
     background-color: #d7373b;
     color: rgba(255, 255, 255, 0.3);
 }
+
+
+
 .slider-item:nth-child(1) {
     background-image: url("../img/nerds-index-slide1.png");
     background-repeat:  no-repeat ; 
     background-position: 100% 0px;
-    display: block;
+    
 }
 .slider-item:nth-child(2) { 
     background-image: url("../img/nerds-index-slide2.png");
@@ -212,7 +242,7 @@ a {
     background-image: url("../img/nerds-index-slide3.png");
     background-repeat:  no-repeat ;
     background-position: bottom right;
-    
+   
 }
 .list-services {
     list-style: none;
@@ -370,6 +400,7 @@ a {
     border-top: 2px solid #eeeeee;
     border-bottom: 2px solid #eeeeee;
     padding: 0;
+    margin-bottom: 20px;
 }
 .site-list {
     list-style: none;
@@ -421,7 +452,7 @@ a {
 .footer-contact {
     position: relative;
     padding: 0;
-    padding-top: 80px;
+    padding-top: 60px;
     margin: 0 auto;
     width: 1200px;
 }
@@ -429,7 +460,7 @@ a {
 .contact-container {
     position: absolute;
     background-color: #fff;
-    top: 130px;
+    top: 110px;
     left: 50%;
     margin-left: -560px;
     padding: 50px 50px 45px 50px;
@@ -444,23 +475,29 @@ a {
 } 
 .footer-contact img {
     text-align: center;
-    position: relative;
-     
+   
  }
- 
  .modal-map {
     display: none;
   }
 .modal-show-map {
     display: block;
+    
+}
+.footer {
+    position: relative;
 }
 .modal-map iframe {
     position: absolute;
     z-index: 2;
- 
+    height: 600px;
+    width: 100%;
     border: none;
+    top: -40px;
   }
-  
+.modal-close.map-close {
+    top: -60px;
+}
  
 
 
@@ -522,8 +559,11 @@ a {
     0% {
       transform: translateY(2000px);
     }
-    20% {
-        transform: translateY(200px);
+    30% {
+        transform: translateY(1000px);
+    }
+    60% {
+        transform: translateY(500px);
     }
     80% {
         transform: translateY(-20px);
@@ -728,7 +768,7 @@ fieldset {
 .filter-item {
     margin: 0;
     padding: 0;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
     border: none;
 }
 .range-filter {
@@ -737,7 +777,7 @@ fieldset {
 }
 .filter-item legend {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -789,6 +829,7 @@ fieldset {
 .price-controls label {
     display: inline-block;
     font-size: 16px;
+    line-height: 22px;
     width: 50%;
     text-transform: uppercase;
 }
@@ -813,7 +854,7 @@ fieldset {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
 
 
@@ -825,9 +866,8 @@ fieldset {
     font-weight: 700;
     text-transform: uppercase;
     padding: 0;
-    margin: 0;
     margin-bottom: 17px;
-   
+  
 } 
 .filter-option {
     line-height: 20px;
@@ -927,14 +967,11 @@ fieldset {
     min-height: 1990px;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+
 }
 .sort {
     display: flex;
     align-items: baseline;
-    margin: 0;
-    padding: 0px;
     margin-bottom: 45px;
     justify-content: space-between;
 }
@@ -948,19 +985,22 @@ fieldset {
 .sort .section-filter {
     width: 360px;
     margin: 0;
-    padding: 0; 
+    
 }
 .sort-parameter {
     display: flex;
-    width: 260px;
-    justify-content: space-between;  
-    padding: 0 20px;
+    width: 300px;
+    padding: 0;
+    flex-wrap: wrap;
+    margin-left: 20px;
 }
 .sort-link {
     font-size: 14px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
+    padding: 0;
+    padding-right: 25px;
 }
 .sort-link:hover,
 .sort-link:focus {
@@ -971,6 +1011,7 @@ fieldset {
     color: rgba(0, 0, 0, 1);
 }
 .sort-value {
+    
     display: flex;
     width: 40px;
     height: 20px;
@@ -996,11 +1037,12 @@ fieldset {
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
-    list-style: none;   
+    list-style: none;  
+    margin-bottom: 30px; 
 }
 .catalog-item {   
     position: relative;
-    display: block;
+
     width: 360px;
     height: 575px;
     padding-top: 40px;
@@ -1038,10 +1080,7 @@ fieldset {
     background-color: #eeeeee;
     width: 360px;
     min-height: 200px;
-    top: 385px;  
-    padding: 0;
-    margin: 0;
-    display: block;
+    bottom: 0px;  
     text-align: center;
     display: none;
     padding-top: 30px;
@@ -1058,13 +1097,10 @@ fieldset {
 
 }
 .price p {
-    margin: 0;
-    padding: 0;
+    margin: 0;   
     line-height: 18px;
     padding-top: 15px;
-    padding-bottom: 40px;
-    text-align: center;
-    
+    margin-bottom: 30px;   
 }
 .price-btn { 
     cursor: pointer;
@@ -1131,6 +1167,9 @@ fieldset {
     clip: rect(0,0,0,0);
     overflow: hidden;
 }
+
+
+
 
 
 
