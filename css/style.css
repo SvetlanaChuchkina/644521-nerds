@@ -105,7 +105,6 @@ a {
     padding: 0;
 }
 
-
 .navigation-site,
 .info-slider{
     list-style: none;
@@ -189,8 +188,6 @@ a {
 .slide {
     display: none;
 }
-
-
 #slide-btn-1:checked ~ .info-slider #slide1,
 #slide-btn-2:checked ~ .info-slider #slide2,
 #slide-btn-3:checked ~ .info-slider #slide3 {
@@ -213,9 +210,6 @@ a {
     border-radius: 50%;  
 }
 
-
-
-
 .info-button:hover,
 .info-button:focus {
     background-color: #e74246;
@@ -224,8 +218,6 @@ a {
     background-color: #d7373b;
     color: rgba(255, 255, 255, 0.3);
 }
-
-
 
 .slider-item:nth-child(1) {
     background-image: url("../img/nerds-index-slide1.png");
@@ -869,16 +861,17 @@ a {
     padding-bottom: 20px;
     padding-left: 40px;
 }
-.filter-option:hover,
-.filter-option:focus {
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
     color: #000000;
 }
-.filter-option:disabled {
+.filter-option label:disabled {
     color: rgba(40, 49, 54, 0.5);
 } 
 .filter-option label {
     position: relative;
     cursor: pointer;
+    
 }
 .filter-input-radio + label::before {
     content: "";
@@ -896,14 +889,15 @@ a {
     background-repeat: no-repeat;
     opacity: 0.2;
 }
-.filter-input-radio + label:focus::before,
-.filter-input-radio + label:hover::before,
-.filter-input-radio:checked + label:focus:before,
-.filter-input-radio:checked + label:hover:before {
+.filter-input-radio:focus + label::before,
+.filter-input-radio:hover + label::before,
+.filter-input-radio:checked:focus + label:before,
+.filter-input-radio:checked:hover + label:before {
     opacity: 1;
 }
-.filter-input-radio + label:active::before,
-.filter-input-radio:checked + label:active:before{
+
+.filter-input-radio:active + label::before,
+.filter-input-radio:checked:active + label:before{
     opacity: 0.1;
 }
 
@@ -917,25 +911,25 @@ a {
     background-image: url(../img/checkbox-off.svg);
     background-repeat: no-repeat;
 }
-.filter-input-checkbox + label:hover::before, 
-.filter-input-checkbox + label:focus::before {
+.filter-input-checkbox:hover + label::before, 
+.filter-input-checkbox:focus + label::before {
     background-image: url(../img/checkbox-off-focus.svg);
     background-repeat: no-repeat;
 }
-.filter-input-checkbox + label:active::before {
+.filter-input-checkbox:active + label::before {
     background-image: url(../img/checkbox-off-act.svg);
     background-repeat: no-repeat;
 }
-.filter-input-checkbox:checked +label::before {
+.filter-input-checkbox:checked + label::before {
     background-image: url(../img/checkbox-on.svg);
     background-repeat: no-repeat;
 }
-.filter-input-checkbox:checked + label:focus::before,
-.filter-input-checkbox:checked + label:hover::before {
+.filter-input-checkbox:checked:focus + label::before,
+.filter-input-checkbox:checked:hover + label::before {
     background-image: url(../img/checkbox-on-focus.svg);
     background-repeat: no-repeat;
 }
-.filter-input-checkbox:checked + label:active::before {
+.filter-input-checkbox:checked:active + label::before {
     background-image: url(../img/checkbox-on-act.svg);
     background-repeat: no-repeat;
 }
@@ -1162,10 +1156,6 @@ a {
     clip: rect(0,0,0,0);
     overflow: hidden;
 }
-
-
-
-
 
 
 
