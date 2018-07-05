@@ -36,26 +36,26 @@
       </nav>    
       <section class="info">    
         <h1 class="visually-hidden">Инфо</h1>
-        <input class="visually-hidden" type="radio" id="slide-btn-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="slide-btn-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="slide-btn-3" name="toggle">
+        <input class="visually-hidden slide-btn-1" type="radio" id="slide-btn-1" name="toggle" checked>
+        <input class="visually-hidden slide-btn-2" type="radio" id="slide-btn-2" name="toggle">
+        <input class="visually-hidden slide-btn-3" type="radio" id="slide-btn-3" name="toggle">
         <div class="slider-controls">  
           <label for="slide-btn-1">Первый</label>
           <label for="slide-btn-2">Второй</label>
           <label for="slide-btn-3">Третий</label>
         </div>
         <ul class="info-slider">
-          <li class="slider-item slide" id="slide1">           
+          <li class="slider-item slide1" id="slide1">           
             <h3>Долго, дорого, скрупулезно.</h3>
             <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
             <a class="info-button btn" href="nerds-catalog.html">Узнать больше</a>        
           </li>
-          <li class="slider-item slide" id="slide2">           
+          <li class="slider-item slide2" id="slide2">           
             <h3>Любим математику как никто другой</h3>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a class="info-button btn" href="nerds-catalog.html">Узнать больше</a>          
           </li>
-          <li class="slider-item slide" id="slide3">           
+          <li class="slider-item slide3" id="slide3">           
             <h3>Только ночь,<br> только хардкорд</h3>
             <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
             <a class="info-button btn" href="nerds-catalog.html">Узнать больше</a>
@@ -65,80 +65,82 @@
     </div>
     </header>
     <main>
-      <section class="services container">
-        <h2 class="visually-hidden">Услуги</h2>
-        <ul class="list-services">
-          <li class="services-item">
-            <b>ВЕБ-САЙТЫ</b>
-            <p>Мир никогда не будет прежним, после того, как увидит ваш сайт!</p>
-            <a class="buy-first btn" href="buy.html">Заказать</a>
-          </li>
-          <li class="services-item">
-            <b>ПРИЛОЖЕНИЯ</b>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="buy-second btn" href="buy.html">Заказать</a>
-          </li>
-          <li class="services-item">
-            <b>ПРЕЗЕНТАЦИИ</b>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="buy-third btn" href="buy.html">Заказать</a>
-          </li>
-        </ul>
-      </section>
-      <section class="marketing container">
-        <h2 class="visually-hidden">Реклама</h2>
-        <div class="dignity">
-          <b class="slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
-          <b class="order">Выполняем заказы на разработку:</b>
-          <ul class="list-order">
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для iOS и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
+      <div class="container">
+        <section class="services">
+          <h2 class="visually-hidden">Услуги</h2>
+          <ul class="list-services">
+            <li class="services-item">
+              <b>ВЕБ-САЙТЫ</b>
+              <p>Мир никогда не будет прежним, после того, как увидит ваш сайт!</p>
+              <a class="buy-first btn" href="buy.html">Заказать</a>
+            </li>
+            <li class="services-item">
+              <b>ПРИЛОЖЕНИЯ</b>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a class="buy-second btn" href="buy.html">Заказать</a>
+            </li>
+            <li class="services-item">
+              <b>ПРЕЗЕНТАЦИИ</b>
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <a class="buy-third btn" href="buy.html">Заказать</a>
+            </li>
           </ul>
-        </div>
-        <div class="practice">
-          <img src="img/logo.png" width="360" height="208" alt="Логотип Нердз с шарами" class="logo-ball">
-          <table class="table">
-            <caption>с 2014 года любим точность во всем</caption>
-            <tr>
-              <td class="value">146<span class="sup">%</span></td>
-              <td class="value">100<span class="sup">%</span></td>
-              <td class="value">50<span class="sup">%</span></td>
-            </tr>
-            <tr>
-              <td class="parameter">Уровень самоотдачи </td>
-              <td class="parameter">Соблюдение сроков</td>
-              <td class="parameter">Минимальная предоплата</td>
-            </tr>
-          </table>
-        </div>
-      </section>   
-      <section class="site container">
-        <h2 class="visually-hidden">Сайты</h2>
-        <ul class="site-list">
-          <li>
-            <a class="site-link" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/logo-html.png" width="199" height="68" alt="Логотип HTMLakademy">
-            </a>
-          </li>
-          <li>
-            <a class="site-link" href="#">
-              <img src="img/logo-barbershop.png" width="209" height="90" alt="Проект Бородинский">
-            </a>
-          </li>
-          <li>
-            <a class="site-link" href="#">  
-              <img src="img/logo-pink.png" width="185" height="52" alt="Логотип PINK">
-            </a>
-          </li>
-          <li> 
-            <a class="site-link" href="#">
-              <img src="img/logo-mishka.png" width="173" height="84" alt="Логотип Мишка">
-            </a>
-          </li>
-        </ul>
-      </section>
+        </section>
+        <section class="marketing">
+          <h2 class="visually-hidden">Реклама</h2>
+          <div class="dignity">
+            <b class="slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
+            <b class="order">Выполняем заказы на разработку:</b>
+            <ul class="list-order">
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="practice">
+            <img src="img/logo.png" width="360" height="208" alt="Логотип Нердз с шарами" class="logo-ball">
+            <table class="table">
+              <caption>с 2014 года любим точность во всем</caption>
+              <tr>
+                <td class="value">146<span class="sup">%</span></td>
+                <td class="value">100<span class="sup">%</span></td>
+                <td class="value">50<span class="sup">%</span></td>
+              </tr>
+              <tr>
+                <td class="parameter">Уровень самоотдачи </td>
+                <td class="parameter">Соблюдение сроков</td>
+                <td class="parameter">Минимальная предоплата</td>
+              </tr>
+            </table>
+          </div>
+        </section>   
+        <section class="site">
+          <h2 class="visually-hidden">Сайты</h2>
+          <ul class="site-list">
+            <li>
+              <a class="site-link" href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="img/logo-html.png" width="199" height="68" alt="Логотип HTMLakademy">
+              </a>
+            </li>
+            <li>
+              <a class="site-link" href="#">
+                <img src="img/logo-barbershop.png" width="209" height="90" alt="Проект Бородинский">
+              </a>
+            </li>
+            <li>
+              <a class="site-link" href="#">  
+                <img src="img/logo-pink.png" width="185" height="52" alt="Логотип PINK">
+              </a>
+            </li>
+            <li> 
+              <a class="site-link" href="#">
+                <img src="img/logo-mishka.png" width="173" height="84" alt="Логотип Мишка">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>  
     </main>
     <footer class="footer">
       <section class="footer-contact">
