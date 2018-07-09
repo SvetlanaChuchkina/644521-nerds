@@ -573,7 +573,7 @@ a {
     fill: rgba(255, 255, 255, 0.3);
 }
 .footer-container {
-    margin-top: 7px;
+    margin-top: 5px;
 }
 .friends {
     margin: 0;
@@ -664,13 +664,13 @@ a {
 }
 .write-us {
     background-color: #fff;
-    padding: 70px 100px 80px 100px;
+    padding: 67px 98px 80px 98px;
     -webkit-box-shadow: 0px 20px 50px 7px #646565;
             box-shadow: 0px 20px 50px 7px #646565;
     position: fixed;
-    top: 50px;
+    top: 20px;
     left: 50%;
-    width: 758px;
+    width: 762px;
     min-height: 440px;
     margin-left: -480px; 
     z-index: 3;
@@ -718,10 +718,10 @@ a {
 }
 .write-us-item:nth-child(1),
 .write-us-item:nth-child(2) {
-    width: 363px;
+    width: 362px;
 }
 .write-us-item:nth-child(3) {
-    width: 763px;
+    width: 760px;
 }
 .label-write-us {
     font-weight: 700;
@@ -741,7 +741,10 @@ a {
     -webkit-box-sizing: inherit; 
             box-sizing: inherit;
     margin: 0;
-    padding: 14px 15px 14px 15px;
+    padding: 14px;
+}
+.write-us-item textarea {
+    padding: 11px 14px 14px 14px;
 }
 .letter-write-us:hover {
     border: 2px solid #b4b9bb;
@@ -938,7 +941,7 @@ a {
 } 
 .filter-option {
     line-height: 20px;
-    padding-bottom: 21px;
+    padding-bottom: 20px;
     padding-left: 35px;
 }
 .filter-input-checkbox:hover + label,
@@ -1017,7 +1020,7 @@ a {
     opacity: 0.1;
 }
 .button-filter {
-    margin-top: 2px;
+    margin-top: 3px;
     line-height: 18px;
     color: #000;
     background-color: #eeeeee;
@@ -1220,7 +1223,7 @@ a {
     background-color: #eeeeee;
     text-align: center;
     display: block;
-    padding: 14px 21px;
+    padding: 13px 21px 12px 21px;
     border-radius: 3px;
 }
 .pagination-link:hover,
